@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fahrrad Vorschriften</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Vorschriften für Fahrräder</h2>
+
+<ul>
+    <li><label><input type="checkbox"> Fahrräder ohne Sitz müssen einplätzig sein</label></li>
+    <li><label><input type="checkbox"> Für Stehbetrieb geeignete Pedale erforderlich</label></li>
+    <li><label><input type="checkbox"> Zusätzlich möglich: 1 Kindersitz</label></li>
+    <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Kinder transportieren</label></li>
+    <li><label><input type="checkbox"> Lenkvorrichtung erforderlich</label></li>
+    <li><label><input type="checkbox"> Zwei kräftige Bremsen erforderlich</label></li>
+    <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
+    <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
+    <li><label><input type="checkbox"> Hinten: rotes Licht</label></li>
+    <li><label><input type="checkbox"> Beleuchtung kann fest montiert oder abnehmbar sein</label></li>
+    <li><label><input type="checkbox"> Beleuchtung ist nur erforderlich, wenn die Sichtverhältnisse es verlangen</label></li>
+    <li><label><input type="checkbox"> Vorne: mindestens ein weisser Rückstrahler</label></li>
+    <li><label><input type="checkbox"> Hinten: mindestens ein roter Rückstrahler</label></li>
+    <li><label><input type="checkbox"> Mehrspurige Fahrräder: je Seite zusätzliche Rückstrahler vorne und hinten</label></li>
+    <li><label><input type="checkbox"> Keine Immatrikulation notwendig (kein Fahrzeugausweis, kein Kontrollschild)</label></li>
+    <li><label><input type="checkbox"> Kinder unter 6 Jahren dürfen nur in Begleitung (mind. 16 Jahre) auf Hauptstrassen fahren</label></li>
+    <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
+</ul>
+
+<div class="buttons">
+    <button onclick="window.location.href='vorschriftenfahrrad.pdf'">Details</button>
+    <button onclick="window.location.href='regelnfahrrad.html'">Zurück</button>
+</div>
+
+</body>
+</html>
