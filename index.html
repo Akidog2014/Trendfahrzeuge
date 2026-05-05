@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrzeug Auswahl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: auto;
+            max-width: 200px;
+            object-fit: contain;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007aff;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Was für ein Fahrzeug hast du vor dir?</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="fahrrad.jpg" alt="Fahrrad">
+        <br>
+        <button onclick="location.href='regelnfahrrad.html'">Fahrrad</button>
+    </div>
+
+    <div class="card">
+        <img src="leichtmotorfahrrad.jpg" alt="Leicht-Motorfahrrad">
+        <br>
+        <button onclick="location.href='regelnleichtmotorfahrrad.html'">Leicht-Motorfahrrad</button>
+    </div>
+
+    <div class="card">
+        <img src="motorfahrrader.jpg" alt="Motorfahrräder">
+        <br>
+        <button onclick="location.href='regelnschwer.html'">Schwere Motorfahrräder</button>
+    </div>
+
+    <div class="card">
+        <img src="rollstuhle.jpg" alt="Motorisierte Rollstühle">
+        <br>
+        <button onclick="location.href='regelnrollstuhl.html'">Motorisierte Rollstühle</button>
+    </div>
+
+    <div class="card">
+        <img src="stehroller.jpg" alt="Elektro-Stehroller">
+        <br>
+        <button onclick="location.href='regelnroller.html'">Elektro Stehroller</button>
+    </div>
+
+    <div class="card">
+        <img src="schnellesebike45.jpg" alt="E-Bike (45km/h)">
+        <br>
+        <button onclick="location.href='ebike45.html'">E-Bike (45km/h)</button>
+    </div>
+
+    <div class="card">
+        <img src="motorfahrrad30.jpg" alt="Motorfahrrad (30km/h)">
+        <br>
+        <button onclick="location.href='motorfahrrad30.html'">Motorfahrrad (30km/h)</button>
+    </div>
+
+</div>
+
+</body>
+</html>
