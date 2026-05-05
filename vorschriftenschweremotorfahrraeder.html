@@ -12,16 +12,29 @@
         h2 {
             color: #333;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+        .rubrik {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
             background: #fff;
-            margin: 8px 0;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .rubrik h3 {
+            flex: 0 0 220px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .rubrik ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rubrik li {
+            margin-bottom: 8px;
         }
         input[type="checkbox"] {
             margin-right: 10px;
@@ -49,26 +62,58 @@
 
 <h2>Vorschriften für schwere Motorfahrräder</h2>
 
-<ul>
-    <li><label><input type="checkbox"> Mehrspuriges Fahrzeug (mindestens 3 Räder)</label></li>
-    <li><label><input type="checkbox"> Max. Geschwindigkeit: 25 km/h (mit oder ohne Tretunterstützung)</label></li>
-    <li><label><input type="checkbox"> Zwei separate, unabhängige Bremssysteme erforderlich</label></li>
-    <li><label><input type="checkbox"> Mindestens ein Rückspiegel links erforderlich</label></li>
-    <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
-    <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
-    <li><label><input type="checkbox"> Hinten: rotes Dauerlicht</label></li>
-    <li><label><input type="checkbox"> Beleuchtung muss auch tagsüber eingeschaltet sein</label></li>
-    <li><label><input type="checkbox"> Richtungsblinker bei geschlossener Kabine obligatorisch, sonst optional</label></li>
-    <li><label><input type="checkbox"> Vorne: zwei weisse Rückstrahler</label></li>
-    <li><label><input type="checkbox"> Hinten: zwei rote Rückstrahler</label></li>
-    <li><label><input type="checkbox"> Pedale: orange Rückstrahler (falls vorhanden)</label></li>
-    <li><label><input type="checkbox"> Anzahl Plätze wird bei der Zulassung festgelegt</label></li>
-    <li><label><input type="checkbox"> Maximale Nutzlast (Personen + Ladung) ist gekennzeichnet</label></li>
-    <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Personen oder Kinder transportieren</label></li>
-    <li><label><input type="checkbox"> Fahrzeug muss immatrikuliert sein (Fahrzeugausweis und Kontrollschild)</label></li>
-    <li><label><input type="checkbox"> Führerausweis Kategorie M erforderlich</label></li>
-    <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
-</ul>
+<!-- Rubrik: Fahrzeugart & Geschwindigkeit -->
+<div class="rubrik">
+    <h3>Fahrzeugart & Geschwindigkeit</h3>
+    <ul>
+        <li><label><input type="checkbox"> Mehrspuriges Fahrzeug (mindestens 3 Räder)</label></li>
+        <li><label><input type="checkbox"> Max. Geschwindigkeit: 25 km/h (mit oder ohne Tretunterstützung)</label></li>
+        <li><label><input type="checkbox"> Anzahl Plätze wird bei der Zulassung festgelegt</label></li>
+        <li><label><input type="checkbox"> Maximale Nutzlast (Personen + Ladung) ist gekennzeichnet</label></li>
+        <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Personen oder Kinder transportieren</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Bremsen & Spiegel -->
+<div class="rubrik">
+    <h3>Bremsen & Spiegel</h3>
+    <ul>
+        <li><label><input type="checkbox"> Zwei separate, unabhängige Bremssysteme erforderlich</label></li>
+        <li><label><input type="checkbox"> Mindestens ein Rückspiegel links erforderlich</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Signale & Beleuchtung -->
+<div class="rubrik">
+    <h3>Signale & Beleuchtung</h3>
+    <ul>
+        <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
+        <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
+        <li><label><input type="checkbox"> Hinten: rotes Dauerlicht</label></li>
+        <li><label><input type="checkbox"> Beleuchtung muss auch tagsüber eingeschaltet sein</label></li>
+        <li><label><input type="checkbox"> Richtungsblinker bei geschlossener Kabine obligatorisch, sonst optional</label></li>
+        <li><label><input type="checkbox"> Vorne: zwei weisse Rückstrahler</label></li>
+        <li><label><input type="checkbox"> Hinten: zwei rote Rückstrahler</label></li>
+        <li><label><input type="checkbox"> Pedale: orange Rückstrahler (falls vorhanden)</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Rechtliches & Führerausweis -->
+<div class="rubrik">
+    <h3>Rechtliches & Führerausweis</h3>
+    <ul>
+        <li><label><input type="checkbox"> Fahrzeug muss immatrikuliert sein (Fahrzeugausweis und Kontrollschild)</label></li>
+        <li><label><input type="checkbox"> Führerausweis Kategorie M erforderlich</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Helm & Sicherheit -->
+<div class="rubrik">
+    <h3>Helm & Sicherheit</h3>
+    <ul>
+        <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
+    </ul>
+</div>
 
 <div class="buttons">
     <button onclick="window.location.href='vorschriftenschweremotorfahrraeder.pdf'">Details</button>
