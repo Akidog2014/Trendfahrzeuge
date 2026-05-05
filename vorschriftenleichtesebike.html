@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Langsame E-Bikes / E-Roller Vorschriften</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .sub-item {
+            margin-left: 25px;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Vorschriften für langsame E-Bikes / E-Roller (Leicht-Motorfahrräder)</h2>
+
+<ul>
+    <li><label><input type="checkbox"> max. 25 km/h</label></li>
+    <li><label><input type="checkbox"> max. 2 Sitzplätze</label></li>
+    <li><label>Zusätzlich möglich:</label>
+        <ul class="sub-item">
+            <li>2 geschützte Kindersitzplätze</li>
+            <li>1 Platz bei bis zu 4 geschützten Kindersitzplätzen</li>
+        </ul>
+    </li>
+    <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Personen oder Kinder transportieren</label></li>
+    <li><label><input type="checkbox"> Zwei Bremsen auf separate Räder</label></li>
+    <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
+    <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
+    <li><label><input type="checkbox"> Hinten: rotes Dauerlicht</label></li>
+    <li><label><input type="checkbox"> Beleuchtung muss auch tagsüber eingeschaltet sein</label></li>
+    <li><label><input type="checkbox"> Bei geschlossener Kabine Richtungsblinker obligatorisch</label></li>
+    <li><label><input type="checkbox"> Sonst Richtungsblinker optional</label></li>
+    <li><label><input type="checkbox"> Hinten: roter Rückstrahler</label></li>
+    <li><label><input type="checkbox"> Vorne: weisser Rückstrahler</label></li>
+    <li><label><input type="checkbox"> Pedale: orange Rückstrahler</label></li>
+    <li><label><input type="checkbox"> Keine Immatrikulation notwendig (kein Fahrzeugausweis, kein Kontrollschild)</label></li>
+    <li><label><input type="checkbox"> Ab 14 Jahren mit Führerausweis Kategorie M</label></li>
+    <li><label><input type="checkbox"> Ab 16 Jahren ohne Führerausweis erlaubt</label></li>
+    <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
+</ul>
+
+<div class="buttons">
+    <button onclick="window.location.href='vorschriftenleichtesebike.pdf'">Details</button>
+    <button onclick="window.location.href='regelnleichtmotorfahrrad.html'">Zurück</button>
+</div>
+
+</body>
+</html>
