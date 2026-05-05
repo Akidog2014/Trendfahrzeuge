@@ -12,16 +12,29 @@
         h2 {
             color: #333;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+        .rubrik {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
             background: #fff;
-            margin: 8px 0;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .rubrik h3 {
+            flex: 0 0 220px; /* Breite der linken Spalte */
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .rubrik ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rubrik li {
+            margin-bottom: 8px;
         }
         input[type="checkbox"] {
             margin-right: 10px;
@@ -49,25 +62,57 @@
 
 <h2>Vorschriften für Fahrräder</h2>
 
-<ul>
-    <li><label><input type="checkbox"> Fahrräder ohne Sitz müssen einplätzig sein</label></li>
-    <li><label><input type="checkbox"> Für Stehbetrieb geeignete Pedale erforderlich</label></li>
-    <li><label><input type="checkbox"> Zusätzlich möglich: 1 Kindersitz</label></li>
-    <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Kinder transportieren</label></li>
-    <li><label><input type="checkbox"> Lenkvorrichtung erforderlich</label></li>
-    <li><label><input type="checkbox"> Zwei kräftige Bremsen erforderlich</label></li>
-    <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
-    <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
-    <li><label><input type="checkbox"> Hinten: rotes Licht</label></li>
-    <li><label><input type="checkbox"> Beleuchtung kann fest montiert oder abnehmbar sein</label></li>
-    <li><label><input type="checkbox"> Beleuchtung ist nur erforderlich, wenn die Sichtverhältnisse es verlangen</label></li>
-    <li><label><input type="checkbox"> Vorne: mindestens ein weisser Rückstrahler</label></li>
-    <li><label><input type="checkbox"> Hinten: mindestens ein roter Rückstrahler</label></li>
-    <li><label><input type="checkbox"> Mehrspurige Fahrräder: je Seite zusätzliche Rückstrahler vorne und hinten</label></li>
-    <li><label><input type="checkbox"> Keine Immatrikulation notwendig (kein Fahrzeugausweis, kein Kontrollschild)</label></li>
-    <li><label><input type="checkbox"> Kinder unter 6 Jahren dürfen nur in Begleitung (mind. 16 Jahre) auf Hauptstrassen fahren</label></li>
-    <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
-</ul>
+<!-- Rubrik: Sitz & Kindersitz -->
+<div class="rubrik">
+    <h3>Sitz & Kindersitz</h3>
+    <ul>
+        <li><label><input type="checkbox"> Fahrräder ohne Sitz müssen einplätzig sein</label></li>
+        <li><label><input type="checkbox"> Für Stehbetrieb geeignete Pedale erforderlich</label></li>
+        <li><label><input type="checkbox"> Zusätzlich möglich: 1 Kindersitz</label></li>
+        <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Kinder transportieren</label></li>
+        <li><label><input type="checkbox"> Kinder unter 6 Jahren dürfen nur in Begleitung (mind. 16 Jahre) auf Hauptstrassen fahren</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Steuerung & Bremsen -->
+<div class="rubrik">
+    <h3>Steuerung & Bremsen</h3>
+    <ul>
+        <li><label><input type="checkbox"> Lenkvorrichtung erforderlich</label></li>
+        <li><label><input type="checkbox"> Zwei kräftige Bremsen erforderlich</label></li>
+        <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Beleuchtung & Reflektoren -->
+<div class="rubrik">
+    <h3>Beleuchtung & Reflektoren</h3>
+    <ul>
+        <li><label><input type="checkbox"> Vorne: weisses Licht</label></li>
+        <li><label><input type="checkbox"> Hinten: rotes Licht</label></li>
+        <li><label><input type="checkbox"> Beleuchtung kann fest montiert oder abnehmbar sein</label></li>
+        <li><label><input type="checkbox"> Beleuchtung ist nur erforderlich, wenn die Sichtverhältnisse es verlangen</label></li>
+        <li><label><input type="checkbox"> Vorne: mindestens ein weisser Rückstrahler</label></li>
+        <li><label><input type="checkbox"> Hinten: mindestens ein roter Rückstrahler</label></li>
+        <li><label><input type="checkbox"> Mehrspurige Fahrräder: je Seite zusätzliche Rückstrahler vorne und hinten</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Rechtliches -->
+<div class="rubrik">
+    <h3>Rechtliches</h3>
+    <ul>
+        <li><label><input type="checkbox"> Keine Immatrikulation notwendig (kein Fahrzeugausweis, kein Kontrollschild)</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Helm & Sicherheit -->
+<div class="rubrik">
+    <h3>Helm & Sicherheit</h3>
+    <ul>
+        <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
+    </ul>
+</div>
 
 <div class="buttons">
     <button onclick="window.location.href='vorschriftenfahrrad.pdf'">Details</button>
