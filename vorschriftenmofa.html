@@ -12,16 +12,29 @@
         h2 {
             color: #333;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+        .rubrik {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
             background: #fff;
-            margin: 8px 0;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .rubrik h3 {
+            flex: 0 0 220px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .rubrik ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rubrik li {
+            margin-bottom: 8px;
         }
         input[type="checkbox"] {
             margin-right: 10px;
@@ -49,28 +62,59 @@
 
 <h2>Vorschriften für Mofas (schnelle Motorfahrräder)</h2>
 
-<ul>
-    <li><label><input type="checkbox"> Maximal 1 Sitzplatz</label></li>
-    <li><label><input type="checkbox"> Max. Geschwindigkeit: 30 km/h (ohne Treten der Pedale möglich)</label></li>
-    <li><label><input type="checkbox"> Zwei separate Bremssysteme erforderlich</label></li>
-    <li><label><input type="checkbox"> Pedale, Lenker und Sattel obligatorisch</label></li>
-    <li><label><input type="checkbox"> Mindestens ein Rückspiegel links erforderlich</label></li>
-    <li><label><input type="checkbox"> Geschwindigkeitsmesser (Tacho) obligatorisch</label></li>
-    <li><label><input type="checkbox"> Klingel oder Hupe erforderlich</label></li>
-    <li><label><input type="checkbox"> Vorne: weisses Abblendlicht</label></li>
-    <li><label><input type="checkbox"> Hinten: rotes Dauerlicht</label></li>
-    <li><label><input type="checkbox"> Beleuchtung muss auch tagsüber eingeschaltet sein</label></li>
-    <li><label><input type="checkbox"> Richtungsblinker optional erlaubt</label></li>
-    <li><label><input type="checkbox"> Hinten: roter Rückstrahler (Pflicht)</label></li>
-    <li><label><input type="checkbox"> Pedale: orange Rückstrahler (Pflicht)</label></li>
-    <li><label><input type="checkbox"> Vorne: weisser Rückstrahler (optional)</label></li>
-    <li><label><input type="checkbox"> Ein Kindersitz erlaubt</label></li>
-    <li><label><input type="checkbox"> Anhänger für maximal zwei Kinder erlaubt (bei angepasstem Tempo)</label></li>
-    <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Kinder transportieren</label></li>
-    <li><label><input type="checkbox"> Fahrzeug muss immatrikuliert sein (Fahrzeugausweis und Kontrollschild)</label></li>
-    <li><label><input type="checkbox"> Führerausweis Kategorie M erforderlich</label></li>
-    <li><label><input type="checkbox"> Velohelm ist obligatorisch</label></li>
-</ul>
+<!-- Rubrik: Sitz & Kindersitz -->
+<div class="rubrik">
+    <h3>Sitz & Kindersitz</h3>
+    <ul>
+        <li><label><input type="checkbox"> Maximal 1 Sitzplatz</label></li>
+        <li><label><input type="checkbox"> Pedale, Lenker und Sattel obligatorisch</label></li>
+        <li><label><input type="checkbox"> Ein Kindersitz erlaubt</label></li>
+        <li><label><input type="checkbox"> Anhänger für maximal zwei Kinder erlaubt (bei angepasstem Tempo)</label></li>
+        <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine Kinder transportieren</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Geschwindigkeit & Bremsen -->
+<div class="rubrik">
+    <h3>Geschwindigkeit & Bremsen</h3>
+    <ul>
+        <li><label><input type="checkbox"> Max. Geschwindigkeit: 30 km/h (ohne Treten der Pedale möglich)</label></li>
+        <li><label><input type="checkbox"> Zwei separate Bremssysteme erforderlich</label></li>
+        <li><label><input type="checkbox"> Mindestens ein Rückspiegel links erforderlich</label></li>
+        <li><label><input type="checkbox"> Geschwindigkeitsmesser (Tacho) obligatorisch</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Beleuchtung & Reflektoren -->
+<div class="rubrik">
+    <h3>Beleuchtung & Reflektoren</h3>
+    <ul>
+        <li><label><input type="checkbox"> Vorne: weisses Abblendlicht</label></li>
+        <li><label><input type="checkbox"> Hinten: rotes Dauerlicht</label></li>
+        <li><label><input type="checkbox"> Beleuchtung muss auch tagsüber eingeschaltet sein</label></li>
+        <li><label><input type="checkbox"> Richtungsblinker optional erlaubt</label></li>
+        <li><label><input type="checkbox"> Hinten: roter Rückstrahler (Pflicht)</label></li>
+        <li><label><input type="checkbox"> Pedale: orange Rückstrahler (Pflicht)</label></li>
+        <li><label><input type="checkbox"> Vorne: weisser Rückstrahler (optional)</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Rechtliches & Führerausweis -->
+<div class="rubrik">
+    <h3>Rechtliches & Führerausweis</h3>
+    <ul>
+        <li><label><input type="checkbox"> Fahrzeug muss immatrikuliert sein (Fahrzeugausweis und Kontrollschild)</label></li>
+        <li><label><input type="checkbox"> Führerausweis Kategorie M erforderlich</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Helm & Sicherheit -->
+<div class="rubrik">
+    <h3>Helm & Sicherheit</h3>
+    <ul>
+        <li><label><input type="checkbox"> Velohelm ist obligatorisch</label></li>
+    </ul>
+</div>
 
 <div class="buttons">
     <button onclick="window.location.href='Vorschriftenmofa30.pdf'">Details</button>
