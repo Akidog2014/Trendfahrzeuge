@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Motorisierte Rollstühle Vorschriften</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        .rubrik {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .rubrik h3 {
+            flex: 0 0 220px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .rubrik ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rubrik li {
+            margin-bottom: 8px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Vorschriften für motorisierte Rollstühle</h2>
+
+<!-- Rubrik: Geschwindigkeit & Plätze -->
+<div class="rubrik">
+    <h3>Geschwindigkeit & Sitzplätze</h3>
+    <ul>
+        <li><label><input type="checkbox"> 1 Platz (bei Fahrzeugen bis 10 km/h: max. 2 Plätze)</label></li>
+        <li><label><input type="checkbox"> bis 15 km/h bei Zuggeräten</label></li>
+        <li><label><input type="checkbox"> bis 25 km/h bei anderen Ausführungen</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Bremsen & Signale -->
+<div class="rubrik">
+    <h3>Obligatorische Ausrüstung</h3>
+    <ul>
+        <li><label><input type="checkbox"> zwei Bremsen auf separate Räder</label></li>
+        <li><label><input type="checkbox"> Klingel oder Hupe</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Beleuchtung & Reflektoren -->
+<div class="rubrik">
+    <h3>Obligatorische Beleuchtung</h3>
+    <ul>
+        <li><label><input type="checkbox"> weisses Vorderlicht</label></li>
+        <li><label><input type="checkbox"> rotes Dauerlicht hinten</label></li>
+        <li><label><input type="checkbox"> Beleuchtung auch tagsüber</label></li>
+        <li><label><input type="checkbox"> Ausnahme: Fahrzeuge bis 10 km/h (Beleuchtung nur bei Bedarf)</label></li>
+    </ul>
+</div>
+
+<div class="rubrik">
+    <h3>Obligatorische Reflektoren</h3>
+    <ul>
+        <li><label><input type="checkbox"> Vorne: zwei weisse Rückstrahler</label></li>
+        <li><label><input type="checkbox"> Hinten: zwei rote Rückstrahler</label></li>
+    </ul>
+</div>
+
+<div class="rubrik">
+    <h3>Fakultative Ausrüstung</h3>
+    <ul>
+        <li><label><input type="checkbox"> Richtungsblinker (bei geschlossener Kabine obligatorisch)</label></li>
+        <li><label><input type="checkbox"> Helm nicht obligatorisch, aber empfohlen</label></li>
+    </ul>
+</div>
+
+<div class="rubrik">
+    <h3>Kinder & Anhänger</h3>
+</div>
+
+<!-- Rubrik: Rechtliches & Führerausweis -->
+<div class="rubrik">
+    <h3>Rechtliches</h3>
+    <ul>
+        <li><label><input type="checkbox"> Fahrzeugausweis und Kontrollschild (Ausnahme: Fahrzeuge bis 10 km/h)</label></li>
+        <li><label><input type="checkbox"> 14-16 Jahre ist der Führerausweis Kategorie M nötig</label></li>
+        <li><label><input type="checkbox"> max. 20km/h = ohne Führerausweis ab 16 Jahren</label></li>
+        <li><label><input type="checkbox"> >20km/h = Führerausweis Kategorie M</label></li>
+        <li><label><input type="checkbox"> Sonderregelungen für Menschen mit Behinderung möglich</label></li>
+        <li><label><input type="checkbox"> Personen unter 16 Jahren dürfen keine weiteren Personen mitführen</label></li>
+    </ul>
+</div>
+
+<div class="buttons">
+    <button onclick="window.location.href='vorschriftenrollstuehle.pdf'">Details</button>
+</div>
+
+</body>
+</html>

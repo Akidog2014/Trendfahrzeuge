@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mofa Vorschriften</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        .rubrik {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .rubrik h3 {
+            flex: 0 0 220px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        .rubrik ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rubrik li {
+            margin-bottom: 8px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Vorschriften für Motorfahrrad Mofas (30km/h)</h2>
+
+<!-- Rubrik: Sitzplätze & Geschwindigkeit -->
+<div class="rubrik">
+    <h3>Geschwindigkeit & Sitzplätze</h3>
+    <ul>
+        <li><label><input type="checkbox"> max. 1 Sitzplatz</label></li>
+        <li><label><input type="checkbox"> max. 30 km/h</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Bremsen und Steuerung -->
+<div class="rubrik">
+    <h3>Obligatorische Ausrüstung</h3>
+    <ul>
+        <li><label><input type="checkbox"> zwei separate Bremssysteme</label></li>
+        <li><label><input type="checkbox"> Pedale, Lenker und Sattel</label></li>
+        <li><label><input type="checkbox"> ein Rückspiegel links</label></li>
+        <li><label><input type="checkbox"> Geschwindigkeitsmesser (Tacho)</label></li>
+        <li><label><input type="checkbox"> Klingel oder Hupe</label></li>
+        <li><label><input type="checkbox"> Helm</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Beleuchtung & Reflektoren -->
+<div class="rubrik">
+    <h3>Obligatorische Beleuchtung</h3>
+    <ul>
+
+        <li><label><input type="checkbox"> weisses Vorderlicht </label></li>
+        <li><label><input type="checkbox"> rotes Dauerlicht hinten </label></li>
+        <li><label><input type="checkbox"> Beleuchtung auch tagsüber </label></li>
+        <li><label><input type="checkbox"> Hinten: roter Rückstrahler </label></li>
+        <li><label><input type="checkbox"> Pedale: orange Rückstrahler </label></li>
+        <li><label><input type="checkbox"> Vorne: weisser Rückstrahler (optional)</label></li>
+    </ul>
+</div>
+
+<div class="rubrik">
+    <h3>Obligatorische Reflektoren</h3>
+    <ul>
+        <li><label><input type="checkbox"> Hinten: roter Rückstrahler </label></li>
+        <li><label><input type="checkbox"> Pedale: orange Rückstrahler </label></li>
+    </ul>
+</div>
+
+<div class="rubrik">
+    <h3>Fakultative Ausrüstung</h3>
+    <ul>
+        <li><label><input type="checkbox"> Bremslicht rot</label></li>
+        <li><label><input type="checkbox"> Kontrollschildbeleuchtung weiss</label></li>
+        <li><label><input type="checkbox"> Fernlicht weiss</label></li>
+        <li><label><input type="checkbox"> Standlicht und Tagfahrlicht vorne weiss hinten rot</label></li>
+        <li><label><input type="checkbox"> Richtungsblinker</label></li>
+        <li><label><input type="checkbox"> vorne: weisser Rückstrahler</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Kinder & Anhänger -->
+<div class="rubrik">
+    <h3>Kinder & Anhänger</h3>
+    <ul>
+        <li><label><input type="checkbox"> Ein Kindersitz erlaubt</label></li>
+        <li><label><input type="checkbox"> Anhänger für maximal zwei Kinder erlaubt (bei angepasstem Tempo)</label></li>
+    </ul>
+</div>
+
+<!-- Rubrik: Rechtliches & Ausrüstung -->
+<div class="rubrik">
+    <h3>Rechtliches</h3>
+    <ul>
+        <li><label><input type="checkbox"> Fahrzeugausweis und Kontrollschild</label></li>
+        <li><label><input type="checkbox"> mindestens Kategorie M (ab 14 Jahren)</label></li>
+        <li><label><input type="checkbox"> unter 16 Jahren dürfen keine Personen mitgeführt werden</label></li>
+    </ul>
+</div>
+
+<div class="buttons">
+    <button onclick="window.location.href='Vorschriftenmofa30.pdf'">Details</button>
+</div>
+
+</body>
+</html>
